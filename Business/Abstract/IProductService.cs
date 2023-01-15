@@ -11,6 +11,7 @@ namespace Business.Abstract
     {
         IDataResult<List<Product>> GetAll();
         IDataResult<Product> GetById(int id);
+        IDataResult<List<Product>> GetListByCategory(int categoryId);
         Result Add(Product product);
         Result Delete(Product product);
         Result Update(Product product);
